@@ -34,7 +34,7 @@ jobs:
           action: "upload"
           app_location: "/"            # ルートディレクトリ
           api_location: ""             # APIなしなら空でOK
-          output_location: "build"     # Next.jsビルド出力。必要に応じて ".next" などに修正可
+          output_location: "out"     # Next.jsビルド出力。必要に応じて ".next" などに修正可
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
